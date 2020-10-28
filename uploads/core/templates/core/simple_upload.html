@@ -9,6 +9,10 @@
     <button type="submit">Upload</button>
   </form>
 
+  {% if replaced_skirt %}
+    <p><img id="img" src="../../../../media/result/gebing_replaced.jpg"></p>
+  {% endif %}
+
   {% if uploaded_file_url %}
     <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
   {% endif %}
